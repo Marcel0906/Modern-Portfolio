@@ -1,0 +1,64 @@
+---
+title: Einführung in MDX
+summary:
+  MDX ist eine Erweiterung von Markdown, die es ermöglicht, JSX-Komponenten
+  direkt in Markdown-Dokumenten zu verwenden, um interaktive und dynamische
+  Inhalte zu erstellen.
+image: /images/posts/introduction-to-mdx.png
+author: 'Marcel Kubetin'
+publishedAt: '2024-09-12'
+---
+
+# Einführung in MDX
+
+MDX (Markdown für JSX) ist eine leistungsstarke Erweiterung von Markdown, die es
+Ihnen ermöglicht, JSX-Komponenten direkt in Ihren Markdown-Dokumenten zu
+verwenden. Dies eröffnet eine Vielzahl von Möglichkeiten, um interaktive und
+dynamische Inhalte zu erstellen.
+
+## Was ist MDX?
+
+MDX kombiniert die Einfachheit von Markdown mit der Flexibilität von JSX. Mit
+MDX können Sie:
+
+- **JSX-Komponenten einbetten:** Verwenden Sie React-Komponenten direkt in Ihren
+  Markdown-Dateien.
+- **Interaktive Inhalte erstellen:** Fügen Sie interaktive Elemente wie
+  Formulare, Diagramme und Karten hinzu.
+- **Wiederverwendbare Komponenten nutzen:** Nutzen Sie die Vorteile von
+  wiederverwendbaren React-Komponenten, um konsistente und wartbare Inhalte zu
+  erstellen.
+
+## Vorteile von MDX
+
+<Counter />{' '}
+
+Und so lässt sich eine react-Komponente in eine mdx-datei einbinden. Weitere
+Komponenten könnten folgen.
+
+MDX bietet mehrere Vorteile gegenüber herkömmlichem Markdown:
+
+- **Flexibilität:** Sie können beliebige JSX-Komponenten in Ihren
+  Markdown-Dateien verwenden, was Ihnen mehr Kontrolle über das Layout und die
+  Funktionalität Ihrer Inhalte gibt.
+- **Wiederverwendbarkeit:** Durch die Verwendung von React-Komponenten können
+  Sie wiederverwendbare Bausteine erstellen, die in verschiedenen Teilen Ihrer
+  Anwendung verwendet werden können.
+- **Interaktivität:** Mit MDX können Sie interaktive Inhalte erstellen, die auf
+  Benutzeraktionen reagieren und dynamische Daten anzeigen.
+
+## Beispiel für eine MDX-Datei
+
+Hier ist ein einfaches Beispiel für eine MDX-Datei, die eine React-Komponente
+einbettet:
+
+```mdx
+import { MyComponent } from './components/MyComponent'
+
+# Willkommen zu meiner Webseite
+
+Dies ist ein Beispiel für eine MDX-Datei. Unten sehen Sie eine eingebettete
+React-Komponente:
+
+<MyComponent />
+```
