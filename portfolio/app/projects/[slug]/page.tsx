@@ -1,17 +1,16 @@
 import React from 'react'
-import { getPostBySlug, getPosts } from '@/lib/posts'
+import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 import { formatDate } from '@/lib/utils'
-// import { MDXRemote } from 'next-mdx-remote/rsc'
 import MDXContent from '@/components/mdx-content'
 
 
 export async function generateStaticPaths() {
-  const posts = await getPosts()
-  const slugs = posts.map(post => ({ slug: post.slug}))
+  const posts = await getProjects()
+  const slugs = posts.map(project => ({ slug: project.slug}))
 
   return slugs
   }
@@ -31,26 +30,26 @@ const components = {
 }
 
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Project({ params }: { params: { slug: string } }) {
   const { slug } = params
-  const post = await getPostBySlug(slug)
+  const project = await getProjectBySlug(slug)
 
-  if (!post) {
+  if (!project) {
     notFound()
   }
 
-  const { metadata, content } = post
+  const { metadata, content } = project
   const { title, image, author, publishedAt } = metadata
 
   return (
     <section className='pb-24 pt-32'>
       <div className='container max-w-3xl'>
         <Link
-          href='/posts'
+          href='/projects'
           className='mb-8 inline-flex items-center gap-2 text-sm font-light'
         >
           <ArrowLeftIcon className='h-5 w-5' />
-          <span>Zurück zu posts</span>
+          <span>Zurück zu den Projekten</span>
         </Link>
 
         {image && (
@@ -78,3 +77,4 @@ export default async function Post({ params }: { params: { slug: string } }) {
     </section>
   )
 }
+
