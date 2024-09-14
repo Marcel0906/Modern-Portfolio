@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-4'>
       <div className='mt-2 flex-1 md:mt-0'>
-        <h1 className='title no-underline'>Hi, Ich bin Marcel Kubetin.</h1>
+        <h1 className='title no-underline'>Hi, ich bin Marcel Kubetin.</h1>
         <p className='mt-3 font-light text-muted-foreground'>
           Ich bin Full-Stack Web Developer aus Bielefeld, Deutschland. Ich habe
           eine Leidenschaft für das Entwickeln von Webanwendungen. Mein Ziel ist

@@ -1,6 +1,8 @@
 import Intro from '@/components/intro'
+// import NewsletterForm from '@/components/newsletter-form'
 import RecentPosts from '@/components/recent-posts'
 import RecentProjects from '@/components/recent-projects'
+import ImageComponent from '@/components/cv-image'
 // import {MDXRemote} from 'next-mdx-remote/rsc'
 // import {serialize} from 'next-mdx-remote/serialize'
 
@@ -14,6 +16,8 @@ export default function Home() {
         <Intro />
         <RecentPosts />
         <RecentProjects />
+        <ImageComponent />
+        {/* <NewsletterForm /> */}
       </div>
     </section>
   )

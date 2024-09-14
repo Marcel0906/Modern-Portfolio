@@ -26,6 +26,11 @@ body {
   }
 } */
 
+/* Hautfarben ändern :root {
+  --background: #fff;
+  --foreground: #222;
+} */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -101,13 +106,24 @@ body {
   }
 }
 
+/* @layer utilities {
+  .dark-mode {
+    @apply bg-gray-800 text-white;
+  }
+} */
+
 @layer base {
   * {
     @apply border-border;
   }
+  /* This styles the body from black to White */
   body {
-    @apply bg-background text-foreground;
-  }
+    @apply bg-gray-800 text-foreground;
+  }  
+
+  /* body {
+    @apply bg-gray-800 text-foreground;
+  } */
 
   .title {
     @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8;
