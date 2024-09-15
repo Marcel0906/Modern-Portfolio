@@ -7,12 +7,9 @@ export default function Intro() {
       <div className='mt-2 flex-1 md:mt-0'>
         <h1 className='title no-underline'>Hi, ich bin Marcel Kubetin.</h1>
         <p className='mt-3 font-light text-muted-foreground'>
-          Ich bin Full-Stack Web Developer aus Bielefeld, Deutschland. Ich habe
-          eine Leidenschaft für das Entwickeln von Webanwendungen. Mein Ziel ist
-          es, mein Wissen und meine Fähigkeiten in einem dynamischen Team
-          einzubringen und innovative Weblösungen zu entwickeln. Ich bin immer
-          auf der Suche nach neuen Herausforderungen und Möglichkeiten, um mich
-          weiterzuentwickeln.
+          Als Full-Stack Web Developer aus Bielefeld, Deutschland, entwickele ich mit
+          Leidenschaft Webanwendungen. In einem dynamischen Team kann ich mein Wissen und meine Fähigkeiten 
+          einbringen und innovative Weblösungen entwickeln. Auf der Suche nach neuen Herausforderungen und Möglichkeiten, hoffe ich auf spannende Projekte.
         </p>
       </div>
       <div className='relative'>

@@ -33,7 +33,7 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 80%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -72,7 +72,7 @@ body {
     --sh-comment: #a19595;
   }
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 240 80% 7%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -117,13 +117,13 @@ body {
     @apply border-border;
   }
   /* This styles the body from black to White */
-  body {
-    @apply bg-gray-800 text-foreground;
-  }  
-
   /* body {
     @apply bg-gray-800 text-foreground;
-  } */
+  }   */
+
+  body {
+    @apply bg-background text-foreground;
+  }
 
   .title {
     @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8;
