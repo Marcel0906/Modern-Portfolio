@@ -8,7 +8,7 @@ import { formatDate } from '@/lib/utils'
 import MDXContent from '@/components/mdx-content'
 
 
-export async function generateStaticPaths() {
+export async function generateStaticParams() {
   const posts = await getProjects()
   const slugs = posts.map(project => ({ slug: project.slug}))
 
@@ -31,11 +31,11 @@ const components = {
 
 
 export default async function Project({ params }: { params: { slug: string } }) {
-  const { slug } = params
-  const project = await getProjectBySlug(slug)
+  // const { slug } = params
+  const project = await getProjectBySlug(params.slug)
 
   if (!project) {
-    notFound()
+    return notFound()
   }
 
   const { metadata, content } = project
