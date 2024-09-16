@@ -6,7 +6,7 @@ export default function About() {
     <>
       <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-4'>
         <div className='mt-2 flex-1 md:mt-0'>
-          <h1 className='title no-underline'>Über mich</h1>
+          <h1 className='title mb-12'>Über mich</h1>
           <p className='mt-3 font-sans'>
             Die Informatik fasziniert mich seit Jahren. Privat habe ich mich
             u.a. gerne über Entwicklungen in der KI, Sicherheitstechnologien und
@@ -17,7 +17,7 @@ export default function About() {
             Gerade in einer so schnell wachsenden Branche wie der IT ist es
             wichtig, auf dem Laufenden zu bleiben und sich über neue
             Technologien und Entwicklungen zu informieren. Daher ist es für mich
-            eine Herausforderung, als Full-Stack Web/Software Developer die
+            eine Herausforderung, als Full-Stack Web Developer die
             Chance zu nutzen, in einem IT-Unternehmen zu arbeiten, das mit
             innovativen und neuen Technologien spannende Projekte entwickelt.{' '}
           </p>
@@ -44,7 +44,10 @@ export default function About() {
 
       <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-4'>
         <div className='mt-2 flex-1 md:mt-0'>
-          <h1 className='title pb-4 no-underline'>Skillset</h1>
+          <h1 className='title mb-12'>Skillset</h1>
+          
+          <h2 className='title mb-4 mt-3 no-underline'>Programming Languages & Tools</h2>
+        
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
             <Image
               src='/images/svg/HTML5.svg'
@@ -299,7 +302,7 @@ export default function About() {
               className='rounded-lg'
             />
           </div>
-          <h2 className='title mb-4 mt-8 no-underline'>Kommunikationstools</h2>
+          <h2 className='title mb-4 mt-8 no-underline'>Kommunikations- und Designtools</h2>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
             <Image
               src='/images/svg/Trello.svg'
