@@ -5,9 +5,9 @@ import Link from 'next/link'
 export default function ImageComponent() {
   return (
     <div className='my-8'>
-        <h2 className='title mb-12'>Lebenslauf</h2>
+      <h2 className='title mb-12'>Lebenslauf</h2>
       <Image
-        src='/images/authors/CV.jpg' // Pfad zu Ihrem Bild
+        src='/images/authors/cv.jpg' // Pfad zu Ihrem Bild
         alt='CV'
         width={1000} // Breite des Bildes
         height={1000} // Höhe des Bildes
@@ -15,9 +15,8 @@ export default function ImageComponent() {
       />
       <br></br>
       <Link href='/contact' className='font-bold'>
-                 Kontaktieren Sie mich
-                </Link>
-
+        Kontaktieren Sie mich
+      </Link>
     </div>
   )
 }
