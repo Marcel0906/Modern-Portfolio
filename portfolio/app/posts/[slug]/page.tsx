@@ -59,7 +59,10 @@ export default async function Post({ params }: { params: { slug: string } }) {
               src={image}
               alt={title || ''}
               className='object-cover'
-              fill
+              // fill
+              height={800}
+              width={800}
+              priority
             />
           </div>
         )}
