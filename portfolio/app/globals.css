@@ -71,6 +71,10 @@ body {
     --sh-sign: #8996a3;
     --sh-comment: #a19595;
   }
+
+   /*  240: Farbton (Hue) in Grad, entspricht Blau
+      80%: Sättigung (Saturation), wie intensiv die Farbe ist
+      17%: Helligkeit (Lightness), wie hell oder dunkel die Farbe ist */
   .dark {
     --background: 240 80% 17%;
     --foreground: 0 0% 98%;
