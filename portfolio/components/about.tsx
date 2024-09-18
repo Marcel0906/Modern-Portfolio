@@ -411,6 +411,14 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <Image
+              src='/images/svg/DeepL.svg'
+              alt='deepl'
+              title='DeepL'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
             </div>
         </div>
       </section>
