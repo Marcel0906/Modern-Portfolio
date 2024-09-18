@@ -113,6 +113,14 @@ export default function About() {
               height={1000}
               className='rounded-lg'
             />
+                    <Image
+              src='/images/svg/nextjs.svg'
+              alt='next.js'
+              title='Next.js | gute Kenntnisse'
+              width={1000}
+              height={1000}
+              className='rounded-lg'
+            />
 
             <Image
               src='/images/svg/SASS.svg'
@@ -150,6 +158,14 @@ export default function About() {
               src='/images/svg/MySQL.svg'
               alt='mysql'
               title='MySQL | erweiterte Grundkenntnisse'
+              width={1000}
+              height={1000}
+              className='rounded-lg'
+            />
+              <Image
+              src='/images/svg/GraphQL.svg'
+              alt='graphql'
+              title='GraphQL | Grundkenntnisse'
               width={1000}
               height={1000}
               className='rounded-lg'
@@ -293,6 +309,14 @@ export default function About() {
               height={1000}
               className='rounded-lg'
             />
+                  <Image
+              src='/images/svg/WordPress.svg'
+              alt='wordpress'
+              title='WordPress | gute Grundkenntnisse'
+              width={1000}
+              height={1000}
+              className='rounded-lg'
+            />
             <Image
               src='/images/svg/Typo3.svg'
               alt='typo3'
@@ -369,6 +393,25 @@ export default function About() {
               className='rounded-lg'
             />
           </div>
+          <h2 className='title mb-4 mt-8 no-underline'>KI Tools</h2>
+          <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
+          <Image
+              src='/images/svg/ChatGPT.svg'
+              alt='chatgpt'
+              title='ChatGPT'
+              width={1000}
+              height={1000}
+              className='rounded-lg'
+            />
+            <Image
+              src='/images/svg/Github-Copilot.svg'
+              alt='github-copilot'
+              title='Github-Copilot'
+              width={1000}
+              height={1000}
+              className='rounded-lg'
+            />
+            </div>
         </div>
       </section>
     </>
