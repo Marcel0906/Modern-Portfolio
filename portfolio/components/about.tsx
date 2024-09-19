@@ -326,7 +326,7 @@ export default function About() {
               className='rounded-lg'
             />
           </div>
-          <h2 className='title mb-4 mt-8 no-underline'>Kommunikations- und Designtools</h2>
+          <h2 className='title mb-4 mt-8 no-underline'>Kommunikationstools und Design</h2>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
             <Image
               src='/images/svg/Trello.svg'
