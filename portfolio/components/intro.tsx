@@ -9,7 +9,7 @@ export default function Intro() {
         <p className='mt-3 font-light text-muted-foreground'>
           Als Full-Stack Web Developer aus Bielefeld, Deutschland, entwickle ich mit
           Leidenschaft Webanwendungen. In einem dynamischen Team kann ich mein Wissen und meine Fähigkeiten 
-          einbringen und innovative Weblösungen entwickeln. Auf der Suche nach neuen Herausforderungen und Möglichkeiten, hoffe ich auf spannende Projekte.
+          einbringen und innovative Weblösungen entwickeln. Auf der Suche nach neuen Herausforderungen und Möglichkeiten hoffe ich auf spannende Projekte.
         </p>
       </div>
       <div className='relative'>

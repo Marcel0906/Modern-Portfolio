@@ -419,6 +419,14 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+               <Image
+              src='/images/svg/Google-gemini.svg'
+              alt='google-gemini'
+              title='Google-gemini'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
             </div>
         </div>
       </section>
