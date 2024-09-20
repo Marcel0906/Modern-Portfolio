@@ -178,6 +178,14 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+                 <Image
+              src='/images/svg/laravel.svg'
+              alt='laravel'
+              title='laravel | Grundkenntnisse'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
             <Image
               src='/images/svg/JSON.svg'
               alt='json'
