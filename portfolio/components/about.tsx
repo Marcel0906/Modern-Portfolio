@@ -8,36 +8,26 @@ export default function About() {
         <div className='mt-2 flex-1 md:mt-0'>
           <h1 className='title mb-12'>Über mich</h1>
           <p className='mt-3 font-sans'>
-            Die Informatik fasziniert mich seit Jahren. Privat habe ich mich
-            u.a. gerne über Entwicklungen in der KI, Sicherheitstechnologien und
-            den Mobilfunk- und Festnetzausbau in Deutschland informiert. Das hat
-            sich zum Beispiel darin niedergeschlagen, dass ich Freunden und
-            Familienmitgliedern bei der Zusammenstellung und dem Kauf von PCs,
-            Laptops und Smartphones mit Rat und Tat zur Seite gestanden habe.
-            Gerade in einer so schnell wachsenden Branche wie der IT ist es
-            wichtig, auf dem Laufenden zu bleiben und sich über neue
-            Technologien und Entwicklungen zu informieren. Daher ist es für mich
-            eine Herausforderung, als Full-Stack Web Developer die
-            Chance zu nutzen, in einem IT-Unternehmen zu arbeiten, das mit
-            innovativen und neuen Technologien spannende Projekte entwickelt.{' '}
+            Die Informatik fasziniert mich seit Jahren, besonders KI,
+            Sicherheitstechnologien und der Festnetz- und Mobilfunkausbau. Privat habe ich
+            Freunden und Familie bei der Auswahl von PCs, Laptops und
+            Smartphones geholfen. In der IT-Branche ist es wichtig, stets am
+            Puls der Zeit zu bleiben. Als Full-Stack Web Developer reizt mich
+            die Arbeit an innovativen Projekten.{' '}
           </p>
 
           <p className='mt-3 font-sans'>
-            Zuverlässigkeit, autodidaktisches Lernen, lösungsorientiertes,
-            selbstständiges Arbeiten zeichneten mein bisheriges Arbeitsverhalten
-            aus. Die termingerechte Fertigstellung und Abgabe meiner
-            Hausarbeiten im Studium sowie die Teamarbeit mit anderen
-            DCI-Studierenden in meiner Weiterbildung beim DCI festigten meine
-            Erfahrungen im agilen Projektmanagement und in Teamleitungsaufgaben
-            mit Projektpräsentationen.
+            Zuverlässigkeit, autodidaktisches Lernen und lösungsorientiertes
+            Arbeiten prägen meinen Arbeitsstil. Im Studium und während meiner
+            Weiterbildung beim DCI sammelte ich Erfahrungen im agilen
+            Projektmanagement, der Teamarbeit und der Projektpräsentation.
           </p>
 
           <p className='mt-3 font-sans'>
-            Zu meinen persönlichen Interessen zählen Wandern in der Natur mit
-            Freunden und Familie, Radfahren, Campen, Joggen und Schwimmen. Diese
-            Interessen dienen meinem gesundheitlichen Ausgleich zur
-            Bildschirmarbeit. Außerdem helfe ich in der Familie bei der Kinder-
-            und Hundebetreuung.
+            Meine Freizeit verbringe ich gerne beim Wandern, Radfahren, Campen,
+            Joggen und Schwimmen, was mir als Ausgleich zur Bildschirmarbeit
+            dient. Zudem unterstütze ich in der Familie bei der Kinder- und
+            Hundebetreuung.
           </p>
         </div>
       </section>
@@ -45,9 +35,11 @@ export default function About() {
       <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-4'>
         <div className='mt-2 flex-1 md:mt-0'>
           <h1 className='title mb-12'>Skillset</h1>
-          
-          <h2 className='title mb-4 mt-3 no-underline'>Programming Languages & Tools</h2>
-        
+
+          <h2 className='title mb-4 mt-3 no-underline'>
+            Programming Languages & Tools
+          </h2>
+
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
             <Image
               src='/images/svg/HTML5.svg'
@@ -57,6 +49,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>HTML5 | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/CSS3.svg'
               alt='css3'
@@ -65,6 +58,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>CSS3 | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/JS.svg'
               alt='javascript'
@@ -73,6 +67,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>JavaScript | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/NodeJS.svg'
               alt='node.js'
@@ -81,6 +76,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>NodeJS | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/TS.svg'
               alt='typescript'
@@ -89,6 +85,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>TypeScript | gute Kenntnisse</p>
             <Image
               src='/images/svg/cra-logo.svg'
               alt='create-react-app'
@@ -97,6 +94,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Create-React-App | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/React.svg'
               alt='react'
@@ -105,6 +103,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>React | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/ViteJS.svg'
               alt='vite.js'
@@ -113,7 +112,8 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
-                    <Image
+            <p>Vite.js | sehr gute Kenntnisse</p>
+            <Image
               src='/images/svg/nextjs.svg'
               alt='next.js'
               title='Next.js | gute Kenntnisse'
@@ -121,7 +121,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
-
+            <p>Next.js | gute Kenntnisse</p>
             <Image
               src='/images/svg/SASS.svg'
               alt='sass'
@@ -130,6 +130,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>SASS | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/expressJS.svg'
               alt='express.js'
@@ -138,6 +139,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Express | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/MongoDB.svg'
               alt='mongodb'
@@ -146,6 +148,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>MongoDB | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/mongoose-original.svg'
               alt='mongoose'
@@ -154,22 +157,25 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Mongoose | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/MySQL.svg'
               alt='mysql'
-              title='MySQL | erweiterte Grundkenntnisse'
+              title='MySQL | gute Kenntnisse'
               width={100}
               height={100}
               className='rounded-lg'
             />
-              <Image
+            <p>MySQL | gute Kenntnisse</p>
+            <Image
               src='/images/svg/GraphQL.svg'
               alt='graphql'
-              title='GraphQL | Grundkenntnisse'
+              title='GraphQL|Grundkenntnisse'
               width={100}
               height={100}
               className='rounded-lg'
             />
+            <p>GraphQL | Grundkenntnisse</p>
             <Image
               src='/images/svg/PHP8.svg'
               alt='php8'
@@ -178,30 +184,16 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
-                 <Image
+            <p>PHP8 | erweiterte Grundkenntnisse</p>
+            <Image
               src='/images/svg/laravel.svg'
-              alt='laravel'
-              title='laravel | Grundkenntnisse'
+              alt='Laravel'
+              title='Laravel | erweiterte Grundkenntnisse'
               width={100}
               height={100}
               className='rounded-lg'
             />
-            <Image
-              src='/images/svg/JSON.svg'
-              alt='json'
-              title='JSON | sehr gute Kenntnisse'
-              width={100}
-              height={100}
-              className='rounded-lg'
-            />
-            <Image
-              src='/images/svg/jwt.svg'
-              alt='jwt'
-              title='JSON Web Token | sehr gute Kenntnisse'
-              width={100}
-              height={100}
-              className='rounded-lg'
-            />
+            <p>Laravel | erweiterte Grundkenntnisse</p>
             <Image
               src='/images/svg/MarkDown.svg'
               alt='markdown'
@@ -210,6 +202,27 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            
+            <p>MarkDown | sehr gute Kenntnisse</p>
+            <Image
+              src='/images/svg/JSON.svg'
+              alt='json'
+              title='JSON | sehr gute Kenntnisse'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
+            <p>JSON | sehr gute Kenntnisse</p>
+            <Image
+              src='/images/svg/jwt.svg'
+              alt='jwt'
+              title='JSON Web Token | sehr gute Kenntnisse'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
+            <p>JSON Web Token | sehr gut Kenntnisse</p>
+       
             <Image
               src='/images/svg/BootStrap.svg'
               alt='bootstrap'
@@ -218,6 +231,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>BootStrap | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/React-BootStrap.svg'
               alt='react-bootstrap'
@@ -226,6 +240,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>React-BootStrap | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/React-Router.svg'
               alt='react-router'
@@ -234,6 +249,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>React-Router | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/React-PostCSS.svg'
               alt='react-postcss'
@@ -242,6 +258,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>React-PostCSS | gute Kenntnisse</p>
             <Image
               src='/images/svg/react-icons.svg'
               alt='react-icons'
@@ -250,6 +267,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>React-Icons | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/TailwindCSS.svg'
               alt='tailwindcss'
@@ -258,6 +276,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>TailwindCSS | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/npm.svg'
               alt='npm'
@@ -266,6 +285,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>NPM | sehr gute Kenntnisse</p>
           </div>
           <h2 className='title mb-4 mt-8 no-underline'>Developing Tools</h2>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
@@ -277,6 +297,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Git | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/GitHub.svg'
               alt='github'
@@ -285,6 +306,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>GitHub | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/Github-desktop-logo-symbol.svg'
               alt='github-desktop'
@@ -293,6 +315,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>GitHub-Desktop | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/Vercel.svg'
               alt='vercel'
@@ -301,6 +324,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Vercel | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/MS-VSCode.svg'
               alt='vscode'
@@ -309,6 +333,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>MS VSCode | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/Postman.svg'
               alt='postman'
@@ -317,7 +342,8 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
-                  <Image
+            <p>Postman | sehr gute Kenntnisse</p>
+            <Image
               src='/images/svg/WordPress.svg'
               alt='wordpress'
               title='WordPress | gute Grundkenntnisse'
@@ -325,6 +351,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>WordPress | erweiterte Grundkenntnisse</p>
             <Image
               src='/images/svg/Typo3.svg'
               alt='typo3'
@@ -333,8 +360,11 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Typo3 | sehr gute Grundkenntnisse</p>
           </div>
-          <h2 className='title mb-4 mt-8 no-underline'>Kommunikationstools und Design</h2>
+          <h2 className='title mb-4 mt-8 no-underline'>
+            Kommunikationstools und Design
+          </h2>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
             <Image
               src='/images/svg/Trello.svg'
@@ -344,6 +374,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Trello</p>
             <Image
               src='/images/svg/Slack.svg'
               alt='slack'
@@ -352,6 +383,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Slack</p>
             <Image
               src='/images/svg/zoom-call.svg'
               alt='zoom'
@@ -360,6 +392,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Zoom</p>
             <Image
               src='/images/svg/Microsoft_Office_Teams.svg'
               alt='microsoft-teams'
@@ -368,6 +401,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Microsoft Teams</p>
             <Image
               src='/images/svg/LinkedIn.svg'
               alt='linkedin'
@@ -376,6 +410,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>LinkedIn</p>
             <Image
               src='/images/svg/GIMP.svg'
               alt='gimp'
@@ -384,6 +419,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>GIMP</p>
             <Image
               src='/images/svg/Figma.svg'
               alt='figma'
@@ -392,6 +428,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Figma</p>
             <Image
               src='/images/svg/Discord.svg'
               alt='discord'
@@ -400,10 +437,11 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Discord</p>
           </div>
           <h2 className='title mb-4 mt-8 no-underline'>KI Tools</h2>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
-          <Image
+            <Image
               src='/images/svg/ChatGPT.svg'
               alt='chatgpt'
               title='ChatGPT'
@@ -411,6 +449,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>ChatGPT</p>
             <Image
               src='/images/svg/Github-Copilot.svg'
               alt='github-copilot'
@@ -419,6 +458,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+            <p>Github-Copilot</p>
             <Image
               src='/images/svg/DeepL.svg'
               alt='deepl'
@@ -427,7 +467,8 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
-               <Image
+            <p>DeepL</p>
+            <Image
               src='/images/svg/Google-gemini.svg'
               alt='google-gemini'
               title='Google-gemini'
@@ -435,7 +476,8 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
-            </div>
+            <p>Google-gemini</p>
+          </div>
         </div>
       </section>
     </>
