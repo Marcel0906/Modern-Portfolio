@@ -89,13 +89,13 @@ export default function About() {
             <p>TypeScript | gute Kenntnisse</p>
             <Image
               src='/images/svg/cra-logo.svg'
-              alt='create-react-app'
-              title='Create-React-App | sehr gute Kenntnisse'
+              alt='CRA'
+              title='CRA | sehr gute Kenntnisse'
               width={100}
               height={100}
               className='rounded-lg'
             />
-            <p>Create-React-App | sehr gute Kenntnisse</p>
+            <p>CRA | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/React.svg'
               alt='react'
