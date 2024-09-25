@@ -31,7 +31,7 @@ export default function About() {
           </p>
         </div>
       </section>
-
+<br/>
       <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-4'>
         <div className='mt-2 flex-1 md:mt-0'>
           <h1 className='title mb-12'>Skillset</h1>
@@ -49,6 +49,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
+           
             <p>HTML5 | sehr gute Kenntnisse</p>
             <Image
               src='/images/svg/CSS3.svg'
@@ -360,7 +361,7 @@ export default function About() {
               height={100}
               className='rounded-lg'
             />
-            <p>Typo3 | sehr gute Grundkenntnisse</p>
+            <p>Typo3 | gute Kenntnisse</p>
           </div>
           <h2 className='title mb-4 mt-8 no-underline'>
             Kommunikationstools und Design
