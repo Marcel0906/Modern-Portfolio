@@ -40,7 +40,7 @@ export default function About() {
             Programming Languages & Tools
           </h2>
 
-          <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
+          <div className='grid grid-cols-1 gap-10 sm:grid-cols-8'>
             <Image
               src='/images/svg/HTML5.svg'
               alt='html5'
@@ -289,7 +289,7 @@ export default function About() {
             <p>NPM | sehr gute Kenntnisse</p>
           </div>
           <h2 className='title mb-4 mt-8 no-underline'>Developing Tools</h2>
-          <div className='grid grid-cols-1 gap-6 sm:grid-cols-8'>
+          <div className='grid grid-cols-1 gap-10 sm:grid-cols-8'>
             <Image
               src='/images/svg/Git.svg'
               alt='git'
