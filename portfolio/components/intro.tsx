@@ -6,7 +6,7 @@ export default function Intro() {
     <section className='flex flex-col-reverse items-start gap-x-10 gap-y-4 pb-4'>
       <div className='mt-2 flex-1 md:mt-0'>
         <h1 className='title no-underline'>Hi, ich bin Marcel Kubetin.</h1>
-        <p className='mt-3 font-light text-muted-foreground'>
+        <p className='mt-3 font-sans text-muted-foreground'>
           Als Full-Stack Web Developer aus Bielefeld, Deutschland, entwickle ich mit
           Leidenschaft Webanwendungen. In einem dynamischen Team kann ich mein Wissen und meine Fähigkeiten 
           einbringen und innovative Weblösungen entwickeln. Auf der Suche nach neuen Herausforderungen und Möglichkeiten hoffe ich auf spannende Projekte.

@@ -7,7 +7,7 @@ export default function ImageComponent() {
     <div className='my-8'>
       <h2 className='title mb-12'>Lebenslauf</h2>
       <Image
-        src='/images/authors/my_resume.png' // Pfad zu Ihrem Bild
+        src='/images/authors/Lebenslauf-neu.png' // Pfad zu Ihrem Bild
         alt='CV'
         width={1000} // Breite des Bildes
         height={1000} // Höhe des Bildes
