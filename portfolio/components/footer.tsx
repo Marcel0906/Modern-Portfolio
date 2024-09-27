@@ -28,7 +28,7 @@ const GitHubIcon = (props: SVGProps<SVGSVGElement>) => (
 const navigation = [
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/marcel-kubetin-9b7a422a7/",
+    href: "https://www.linkedin.com/in/marcel-kubetin/",
     icon: LinkedInIcon,
   },
   {

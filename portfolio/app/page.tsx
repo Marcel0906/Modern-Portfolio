@@ -14,9 +14,9 @@ export default function Home() {
       {/* Definiert einen Container für zentrierten Inhalt */}
       <div className='container max-w-3xl'>
         <Intro />
-        <RecentPosts />
-        <RecentProjects />
         <ImageComponent />
+        <RecentProjects />
+        <RecentPosts />
         {/* <NewsletterForm /> */}
       </div>
     </section>
