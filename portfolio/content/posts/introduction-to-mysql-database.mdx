@@ -1,0 +1,88 @@
+---
+title: "Einführung in meine MySQL Datenbank"
+summary: MySQL ist ein weit verbreitetes, leistungsstarkes und flexibles relationales Datenbankmanagementsystem (RDBMS).
+date: "2023-10-01"
+image: "/images/posts/introduction-to-mysql.jpg"
+author: 'Marcel Kubetin'
+publishedAt: '2024-11-04'
+---
+
+# Einführung in MySQL
+
+<br />
+
+MySQL ist ein weit verbreitetes, leistungsstarkes und flexibles relationales Datenbankmanagementsystem (RDBMS). Es wurde ursprünglich von MySQL AB entwickelt und ist jetzt ein Teil von Oracle Corporation. MySQL wird häufig für Webanwendungen verwendet und ist bekannt für seine Zuverlässigkeit, Leistung und Benutzerfreundlichkeit.
+
+<br />
+
+## Vorteile von MySQL
+
+<br />
+
+- **Leistungsstark und schnell**: MySQL ist für seine hohe Leistung und Geschwindigkeit bekannt, was es ideal für Anwendungen mit hohem Datenverkehr macht.
+- **Skalierbar**: MySQL kann sowohl kleine als auch große Datenbanken effizient verwalten, was es zu einer guten Wahl für wachsende Anwendungen macht.
+- **Flexibel**: MySQL unterstützt eine Vielzahl von Speicher-Engines, die je nach Anwendungsfall ausgewählt werden können.
+- **Open Source**: MySQL ist Open Source und kann kostenlos verwendet und modifiziert werden. Es gibt auch kommerzielle Versionen mit zusätzlichen Funktionen und Support.
+- **Große Community**: MySQL hat eine große und aktive Community, die Unterstützung, Dokumentation und eine Vielzahl von Tools und Erweiterungen bietet.
+
+<br />
+
+## Nachteile von MySQL
+
+<br />
+
+- **Lizenzierung**: Während die Community-Edition von MySQL kostenlos ist, können die kommerziellen Versionen teuer sein.
+- **Komplexität**: Für sehr komplexe Datenbankanforderungen kann MySQL schwieriger zu verwalten sein als einige andere RDBMS.
+- **Funktionseinschränkungen**: Einige fortgeschrittene Funktionen, die in anderen RDBMS verfügbar sind, fehlen in MySQL oder sind weniger ausgereift.
+
+<br />
+
+## Beliebte MySQL-Frameworks und Tools
+
+<br />
+
+- **phpMyAdmin**: Ein beliebtes Web-Interface zur Verwaltung von MySQL-Datenbanken.
+- **Sequel Pro**: Ein benutzerfreundlicher MySQL-Client für macOS.
+- **MySQL Workbench**: Ein umfassendes Tool von Oracle zur Modellierung, Entwicklung und Verwaltung von MySQL-Datenbanken.
+- **Laravel**: Ein PHP-Framework, das eine einfache Integration und Verwaltung von MySQL-Datenbanken bietet.
+- **Django**: Ein Python-Framework, das MySQL als eine seiner unterstützten Datenbanken verwendet.
+
+<br />
+
+## Beispielcode
+
+<br />
+
+Hier ist ein einfacher Beispielcode, der zeigt, wie man eine Verbindung zu einer MySQL-Datenbank in PHP herstellt und eine einfache Abfrage ausführt:
+
+<br />
+
+```php
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "database";
+
+// Verbindung herstellen
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verbindung überprüfen
+if ($conn->connect_error) {
+    die("Verbindung fehlgeschlagen: " . $conn->connect_error);
+}
+
+// SQL-Abfrage ausführen
+$sql = "SELECT id, firstname, lastname FROM MyGuests";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Ausgabe der Daten jeder Zeile
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 Ergebnisse";
+}
+$conn->close();
+?>
