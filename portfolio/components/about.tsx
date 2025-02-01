@@ -287,6 +287,15 @@ export default function About() {
               className='rounded-lg'
             />
             <p>NPM | sehr gute Kenntnisse</p>
+            <Image
+              src='/images/svg/java.svg'
+              alt='java'
+              title='Java | Grundkenntnisse'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
+            <p>Java | Grundkenntnisse</p>
           </div>
           <h2 className='title mb-4 mt-8 no-underline'>Developing Tools</h2>
           <div className='grid grid-cols-1 gap-10 sm:grid-cols-6'>
@@ -362,6 +371,15 @@ export default function About() {
               className='rounded-lg'
             />
             <p>Typo3 | gute Kenntnisse</p>
+            <Image
+              src='/images/svg/eclipse.svg'
+              alt='eclipse'
+              title='Eclipse | Grundkenntnisse'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
+            <p>Eclipse | Grundkenntnisse</p>
           </div>
           <h2 className='title mb-4 mt-8 no-underline'>
             Kommunikationstools und Design
@@ -472,12 +490,21 @@ export default function About() {
             <Image
               src='/images/svg/Google-gemini.svg'
               alt='google-gemini'
-              title='Google-gemini'
+              title='Google Gemini'
               width={100}
               height={100}
               className='rounded-lg'
             />
-            <p>Google-gemini</p>
+            <p>Google Gemini</p>
+            <Image
+              src='/images/svg/perplexity.svg'
+              alt='perplexity'
+              title='Perplexity'
+              width={100}
+              height={100}
+              className='rounded-lg'
+            />
+            <p>Perplexity</p>
           </div>
         </div>
       </section>
