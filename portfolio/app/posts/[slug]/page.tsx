@@ -31,7 +31,7 @@ const components = {
 }
 
 // Definiert den Typ für die Props der Post-Komponente
-interface PostProps {
+interface PageProps {
   params: {
     slug: string
   }
@@ -39,7 +39,7 @@ interface PostProps {
 
 
 
-export default async function Post({ params }: PostProps) {
+export default async function Post({ params }: PageProps) {
   // const { slug } = params
   const post = await getPostBySlug(params.slug)
 
