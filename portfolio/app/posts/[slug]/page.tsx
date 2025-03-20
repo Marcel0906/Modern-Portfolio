@@ -8,28 +8,6 @@ import { formatDate } from '@/lib/utils'
 // import { MDXRemote } from 'next-mdx-remote/rsc'
 import MDXContent from '@/components/mdx-content'
 
-
-export async function generateStaticParams() {
-  const posts = await getPosts()
-  const slugs = posts.map(post => ({ slug: post.slug}))
-
-  return slugs
-  }
-
-// Definiert die Typen für die Props der h2-Komponente
-interface H2Props extends React.HTMLAttributes<HTMLHeadingElement> {}
-
-
-// h2 props any wird nicht empfohlen, sondern sollte spezifisch sein
-
-// Definiert die h2-Komponente mit spezifischen Typen für die Props
-const components = {
-    h2: (props: H2Props) => ( <h2 {...props} className='text-red-400'>
-    {props.children}
-    </h2>
-    ),
-}
-
 // Definiert den Typ für die Props der Post-Komponente
 interface PageProps {
   params: {
@@ -38,8 +16,27 @@ interface PageProps {
 }
 
 
-export default async function Post({ params }: PageProps) {
-  // const { slug } = params
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const posts = await getPosts()
+  return posts.map(post => ({ slug: post.slug }))
+
+  
+}
+
+// Definiert die Typen für die Props der h2-Komponente
+interface H2Props extends React.HTMLAttributes<HTMLHeadingElement> {}
+
+// Definiert die h2-Komponente mit spezifischen Typen für die Props
+const components = {
+  h2: (props: H2Props) => (
+    <h2 {...props} className='text-red-400'>
+      {props.children}
+    </h2>
+  ),
+}
+
+
+export default async function Post({ params }: PageProps) { // <-- Typdefinition angepasst
   const post = await getPostBySlug(params.slug)
 
   if (!post) {
