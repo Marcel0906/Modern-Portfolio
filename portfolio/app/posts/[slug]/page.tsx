@@ -11,9 +11,7 @@ import MDXContent from '@/components/mdx-content'
 
 export async function generateStaticParams() {
   const posts = await getPosts()
-  const slugs = posts.map(post => ({ slug: post.slug}))
-
-  return slugs
+  return posts.map(post => ({ slug: post.slug}))
   }
 
 // Definiert die Typen für die Props der h2-Komponente
