@@ -29,9 +29,9 @@ const components = {
 }
 
 
-export default async function Post({ params }: { params:  { slug: string } }) {
-  // const { slug } = params
-  const post = await getPostBySlug(params.slug)
+export default async function Post() {
+  const slug = 'your-slug-here' // Ersetzen Sie dies durch den tatsächlichen Slug
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     return notFound()
