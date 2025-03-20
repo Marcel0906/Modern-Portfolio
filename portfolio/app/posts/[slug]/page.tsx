@@ -8,21 +8,11 @@ import { formatDate } from '@/lib/utils'
 // import { MDXRemote } from 'next-mdx-remote/rsc'
 import MDXContent from '@/components/mdx-content'
 
-// Definiert den Typ für die Props der Post-Komponente
-interface PageProps {
-  params: {
-    slug: string
-  }
-}
-
-
-export async function generateStaticParams(): Promise<Array<{params: {slug: string }}>> {
+export async function generateStaticParams() {
   const posts = await getPosts()
+  const slugs = posts.map(post => ({ slug: post.slug }))
 
-  return posts.map(post => ({
-    params:  {slug: post.slug} }))
-
-  
+  return slugs
 }
 
 // Definiert die Typen für die Props der h2-Komponente
@@ -38,7 +28,7 @@ const components = {
 }
 
 
-export default async function Post({ params }: PageProps) { // <-- Typdefinition angepasst
+export default async function Post({ params }: { params: { slug: string } }) { // <-- Typdefinition angepasst
   const post = await getPostBySlug(params.slug)
 
   if (!post) {
