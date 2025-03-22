@@ -8,6 +8,15 @@ import { formatDate } from '@/lib/utils'
 // import { MDXRemote } from 'next-mdx-remote/rsc'
 import MDXContent from '@/components/mdx-content'
 
+// Definiert den Typ für die Params
+interface Params {
+  slug: string;
+}
+
+interface PageProps {
+  params: Params;
+}
+
 export async function generateStaticParams() {
   const posts = await getPosts()
   const slugs = posts.map(post => ({ slug: post.slug }))
@@ -36,17 +45,18 @@ const components = {
 
 // First Way
 
-// export default async function Post({ params }: PageProps) { // <-- Typdefinition angepasst
-//   const post = await getPostBySlug(params.slug)
+export default async function Post({ params }: PageProps) { // <-- Typdefinition angepasst
+  const post = await getPostBySlug(params.slug)
 
 //   if (!post) {
 //     return notFound()
 //   }
 
 // Second Way
-export default async function Post({ params }: { params: { slug: string } }) {
-  // const { slug } = params
-  const post = await getPostBySlug(params.slug)
+// export default async function Post({ params }: { params: { slug: string } }) {
+//   // const { slug } = params
+//   const post = await getPostBySlug(params.slug)
+
 
   if (!post) {
     return notFound()
