@@ -8,7 +8,7 @@ import { formatDate } from '@/lib/utils'
 // import { MDXRemote } from 'next-mdx-remote/rsc'
 import MDXContent from '@/components/mdx-content'
 
-// Definiert den Typ für die Params
+
 interface Params {
   slug: string;
 }
