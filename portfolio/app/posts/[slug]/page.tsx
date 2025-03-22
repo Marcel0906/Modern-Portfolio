@@ -17,13 +17,9 @@ interface PageProps {
   params: Params;
 }
 
-interface StaticParams {
-  slug: string;
-}
-
-export async function generateStaticParams(): Promise<StaticParams[]> {
+export async function generateStaticParams() {
   const posts = await getPosts()
-  const slugs: StaticParams[] = posts.map(post => ({ slug: post.slug }))
+  const slugs = posts.map(post => ({ slug: post.slug }))
 
   return slugs
 }
